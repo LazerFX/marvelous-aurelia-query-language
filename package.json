@@ -4,7 +4,7 @@
   "author": "Damian Kaminski",
   "license": "GNU General Public License",
   "homepage": "http://marvelous.software/docs.html#/query-language",
-  "main": "dist/common/query-language.js",
+  "main": "dist/commonjs/query-language.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/MarvelousSoftware/marvelous-aurelia-query-language"
