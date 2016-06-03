@@ -18,14 +18,14 @@ function buildTypeScript(moduleName) {
 
 gulp.task('build-html-commonjs', function () {
   return gulp.src(paths.html)
-    .pipe(changed(paths.output + 'common'))
-    .pipe(gulp.dest(paths.output + 'common'));
+    .pipe(changed(paths.output + 'commonjs'))
+    .pipe(gulp.dest(paths.output + 'commonjs'));
 });
 gulp.task('build-sass-commonjs', function () {
-  return buildSass('common');
+  return buildSass('commonjs');
 });
 gulp.task('build-commonjs', ['build-html-commonjs', 'build-sass-commonjs'], function () {
-  return buildTypeScript('common');
+  return buildTypeScript('commonjs');
 });
 
 gulp.task('build-html-amd', function () {
